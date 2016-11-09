@@ -216,6 +216,9 @@
   #world.gb .gb {
     fill: #ff6600;
   }
+  #world.ee .ee {
+    fill: #ff6600;
+  }
   #world.it .it {
     fill: #ff6600;
   }
@@ -9429,7 +9432,7 @@
   </g>
   </g>
   <script type="text/javascript"><![CDATA[
-    var countriesToSelect = ['ru', 'lv', 'in', 'nl', 'pl', 'fi', 'us', 'gb', 'it', 'fr'];
+    var countriesToSelect = ['ru', 'lv', 'in', 'nl', 'pl', 'fi', 'us', 'gb', 'ee', 'it', 'fr'];
     var country;
     var world = document.getElementById('world');
 
