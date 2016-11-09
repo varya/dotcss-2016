@@ -130,11 +130,7 @@ Hello there!
 Varya Stepanova<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
-### The tool: [github.com/sc5/sc5-styleguide-visualtest](https://github.com/SC5/sc5-styleguide-visualtest)
-
-### Working code: [github.com/varya/varya.github.com](http://git.io/visual-tests-demo)
-
-### Slides: [varya.me/turku-frontend-2016](http://varya.me/turku-frontend-2016/)
+### Slides: [varya.me/dotcss-2016](http://varya.me/dotcss-2016/)
 
 <style>
 .thanks h3 {
