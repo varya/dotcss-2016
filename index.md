@@ -90,7 +90,7 @@ style: |
 <style>
 
 #Cover {
-  background-image:url('pictures/cover.jpg');
+  background-image:url('pictures/fantacy-library.jpg');
   background-size: cover;
   background-position: 0 0, center;
 }
