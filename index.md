@@ -4,6 +4,11 @@ layout: sc5
 
 style: |
 
+    .slide h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
     #Cover .main-logo__wrapper {
         width: 100%;
         text-align: center;
@@ -76,9 +81,12 @@ style: |
     .no-title h2 {
       display: none;
     }
+    img.cover {
+      width: 100%;
+    }
 ---
 
-# Title {#Cover}
+# Pattern libraries through trial and error {#Cover}
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
@@ -86,6 +94,13 @@ style: |
 
 *Brought to you by&nbsp;[Varya&nbsp;Stepanova](http://varya.me/) from [SC5](http://sc5.io), 26th October 2016*
 {: .credits }
+
+<!--
+This story sums up my experience in developing modular web solutions and pattern libraries. In fact, I am now doing
+exactly the same what I was doing 8 years ago. But how I do it is very different from how I did it back then. And the
+reasoning of choices for methods and tools to apply goes directly from grasping human nature, no less. BEM, living
+styleguides and visual regression tests are involved.
+-->
 
 <style>
 
@@ -117,12 +132,123 @@ style: |
 }
 </style>
 
-## Chapter
+## Bonjour!
 {: .shout }
 
-## Slide
+## Me
+{: .no-title }
 
-Hello there!
+### Now
+Senior Software Specialist at <b>SC5</b> (Helsinki)
+
+### Before
+<b>TMG</b> (Amsterdam, the Netherlands); <b>Yandex</b>&nbsp;(Moscow,&nbsp;Russia)
+
+### Area of expertise
+Components on the web: libraries, SGDD, BEM. Techs: CSS, JavaScript, etc
+
+## Dreams
+
+Developing is good but I want something more.
+
+Do smth for not doing anything.
+
+## Blocks
+
+I want to develop interfaces like walls with blocks.
+
+## Yandex
+{: .shout }
+
+## Yandex
+{: .cover .no-title }
+
+![](pictures/yandex.png){: .cover }
+
+## Yandex services
+{: .cover .no-title }
+
+![](pictures/yandex-all.png){: .cover }
+
+## The blocks
+{: #the-blocks }
+
+![](pictures/yandex-blocks.png){: .cover }
+
+<style>
+#the-blocks h2 {
+  margin-bottom: 0.25em;
+}
+</style>
+
+## Lego
+{: #lego }
+
+![](pictures/yandex-library.png){: .cover }
+
+<style>
+#lego h2 {
+  margin-bottom: 0;
+}
+</style>
+
+## Version upgrade
+
+Twitter bootstrap problem
+
+## Templates
+
+Data layer, template layer
+
+## BEM
+
+## BEM eco system
+
+Possible to make a styleguide but complex
+
+## Good our of it
+
+* component file structure
+* documenttaion near code
+
+## Going over the test
+
+Работа над ошибками
+
+
+## Living styleguides
+
+## KSS
+
+Documentation in the code
+
+## SC5 Styleguide
+
+## Visual tests
+
+More slides
+
+## Client projects
+
+## Open source
+
+* Start in open source
+* Feature is more than code
+
+## Around the globe
+{: .shout }
+
+## Conferences
+{: .no-title }
+
+<object type="image/svg+xml"
+  data="pictures/World-movie.svg" class="world"></object>
+
+<style>
+#conferences .world {
+  width: 100%;
+}
+</style>
 
 ## Thank you
 {: .thanks }
