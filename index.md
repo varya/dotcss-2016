@@ -564,10 +564,19 @@ Twitter bootsrap
 }
 </style>
 
-## Going over the test
+## SC5
 {: .shout }
 
-<!-- Работа над ошибками -->
+## Going over the test
+{: .statement .no-title #over-test }
+
+Going over the test
+
+<style>
+#over-test > div p {
+  line-height: 400px;
+}
+</style>
 
 ## Human's problems
 {: .no-title .statement #problems }
@@ -640,14 +649,13 @@ More slides
 {: .shout }
 
 ## World
-{: .no-titlei #world }
+{: .no-title #world }
 
-<object type="image/svg+xml"
-  data="pictures/World-movie.svg" class="world"></object>
+![](pictures/world.png){: .world }
 
 <style>
 #world .world {
-  width: 100%;
+  width: 95%;
 }
 </style>
 
