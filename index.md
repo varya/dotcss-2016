@@ -5,7 +5,7 @@ layout: sc5
 style: |
 
     .slide h3 {
-        font-size: 30px;
+        font-size: 36px;
         font-weight: bold;
     }
 
@@ -78,6 +78,15 @@ style: |
     .shout.slide h2 {
       color: #fff;
     }
+    .shout.slide h3 {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      width: 100%;
+      transform: translateY(75px) translateX(-50%);
+    }
     .statement.slide div {
       position: absolute;
       top: 50%;
@@ -102,7 +111,7 @@ style: |
     }
 ---
 
-# Pattern libraries through trial and error {#Cover}
+# Pattern libraries <span class="sub">through trial and error</span> {#Cover}
 
 <div class="main-logo__wrapper">
     <object class="main-logo" data="themes/sc5/images/logo.min.svg#white" type="image/svg+xml"></object>
@@ -124,12 +133,38 @@ styleguides and visual regression tests are involved.
   background-image:url('pictures/fantacy-library.jpg');
   background-size: cover;
   background-position: 0 0, center;
+  position: relative;
+}
+
+#Cover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.list #Cover::after {
+  width: 256px;
+  height: 160px;
 }
 
 #Cover h2 {
   text-shadow: 7px 3px 7px rgba(0,0,0,0.5);
-  font-size: 48px;
+  font-size: 72px;
   margin-top: 220px;
+  line-height: 1.25em;
+}
+
+#Cover h2 .sub {
+  font-size: 60px;
+  font-family: 'Lora',sans-serif;
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 #Cover .credits {
@@ -161,20 +196,28 @@ Senior Software Specialist at <b>SC5</b> (Helsinki)
 <b>TMG</b> (Amsterdam, the Netherlands); <b>Yandex</b>&nbsp;(Moscow,&nbsp;Russia)
 
 ### Area of expertise
-Components on the web: libraries, SGDD, BEM. Techs: CSS, JavaScript, etc
+Components for web: pattern libraries, SGDD, BEM, React.
 
-## Dreams
+## The dream development
+{: .dream }
 
-Developing is good but I want something more.
+> only lazy programmers will want to write the kind of tools that might replace them in the end
 
-Do smth for not doing anything.
+<figcaption>Philipp Lenssen</figcaption>
 
-## Blocks
+<style>
+.dream blockquote {
+  margin-top: 3em;
+}
+</style>
+
+## Interface of blocks
 {: #blocks }
 
-* Unified interface<br/>
-  = stable result
-* Code reusing<br/>
+### Unified interface
+= stable result
+
+### Code reusing
   = less work to do
 
 <style>
@@ -188,20 +231,14 @@ Do smth for not doing anything.
 #blocks.slide h2 {
   text-align: left;
   color: #FFF;
+  margin-bottom: 1.5em;
 }
 </style>
 
 ## Yandex
 {: .shout }
 
-## Yandex
-{: .cover .no-title }
-
-![](pictures/yandex.png){: .cover }
-
-## Over 200 sites & apps
-
-![](pictures/yandex-all.png){: .cover }
+### 2008 — 2014
 
 ## The blocks
 {: #the-blocks }
@@ -225,21 +262,6 @@ Do smth for not doing anything.
 }
 </style>
 
-## The key ideas
-
-### BEM
-
-[bem.info](https://en.bem.info/), [getbem.com](http://getbem.com/)
-
-### Multilingualism
-
-```
-  Dropdown/
-    Dropdown.css
-    Dropdowm.js
-    Dropdown.md   // <-- NOTE! Documentation :-)
-```
-
 ## Version migration
 {: .shout }
 
@@ -255,10 +277,10 @@ Twitter bootsrap
 
 ## Requirements
 
-* Update 150+ websites
+* Update 200+ websites
 * 100+ common components, + custom components
 * Do it yesterday
-* Keep the people calm
+* <b>Keep the people calm</b>
 
 ## BEM tree
 {: #bem-tree }
@@ -333,99 +355,6 @@ Twitter bootsrap
 }
 #bem-tree .code code {
   font-size: 0.5em;
-}
-</style>
-
-## Templates
-{: #templates }
-
-<table class="table"><tr>
-
-<th>BEM tree</th>
-<th width="25%"></th>
-<th width="25%">HTML</th>
-
-</tr><tr>
-
-<td markdown="1" width="50%">
-
-```
-{
-  block: "page",
-  content: [
-    {
-      block: "header",
-      content: [
-        { block: "logo", title: "Custom alt title" },
-        { block: "search" }
-      ]
-    },
-    {
-      block: "sidebar",
-      content: ...
-    },
-    {
-      block: "main",
-      content: ...
-    }
-  ]
-}
-```
-{: .code }
-    
-
-</td>
-<td markdown="1" width="25%" class="templates">
-</td>
-<td markdown="1" width="25%">
-
-```
-<div class="page">
-  <div class="header">
-    <div class="header__logo">
-      <logo class="logo"><img src=.../></logo>
-    </div>
-    <div class="header__middle">
-      <form class="search">
-        <span class="search__input">
-          <label class="input__hint input__hint--size--s"></label>
-          <span class="input__box">
-            <input class="input__control"/>
-          </span>
-        </span>
-        <span class="search__button>
-          <button role="button" class="button">
-            Search
-          </button>
-        </span>
-      </form>
-    </div>
-  </div>
-  ...
-</div>
-```
-{: .code }
-
-</td>
-
-</tr></table>
-
-<style>
-#templates .table {
-  table-layout: fixed;
-}
-
-#templates .code {
-  overflow: hidden;
-}
-#templates .code code {
-  font-size: 0.5em;
-}
-
-#templates .templates {
-  background-image:url(pictures/gears.jpg);
-  background-size: contain;
-  background-position: 0 25%, center;
 }
 </style>
 
@@ -527,16 +456,6 @@ Twitter bootsrap
 </style>
 
 
-## BEM eco system
-{: .shout }
-
-## BEM eco system
-
-* Methodology
-* File structure
-* Building tools
-* Libraries: bem-core, [bem-components](https://en.bem.info/libs/bem-components/v3.0), bem-mvc, ...
-
 ## BEM(ish) style guide
 {: #bem-components }
 
@@ -548,13 +467,18 @@ Twitter bootsrap
 }
 </style>
 
-## To repeat it
+## To do the same
 {: #to-repeat }
 
-* Understand the theory
-* Follow the structure
-* [Copy and modify the config](examples/config.js)
-* <b>Programm different</b>
+### Stricktly follow
+Methodology, File structure, Building tools
+
+### Repeat by
+libraries: bem-core, [bem-components](https://en.bem.info/libs/bem-components/v3.0), bem-mvc, ...<br/>
+[Copy and modify the config](examples/config.js)
+
+### <s>Think</s> Program different
+{: .next }
 
 <style>
 #to-repeat .code {
@@ -566,6 +490,8 @@ Twitter bootsrap
 
 ## SC5
 {: .shout }
+
+### 2014 — now
 
 ## Going over the test
 {: .statement .no-title #over-test }
@@ -581,7 +507,7 @@ Going over the test
 ## Human's problems
 {: .no-title .statement #problems }
 
-Do not solve technical problems.
+Do not solve<br/>technical problems.
 {: .not }
 
 Help people!
@@ -589,7 +515,7 @@ Help people!
 
 <style>
 #problems .not {
-  font-family: 'Lora',sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 #problems .help {
   text-transform: uppercase;
@@ -598,7 +524,7 @@ Help people!
 }
 </style>
 
-## Think modularly
+## Think in modulas
 {: .shout }
 
 ## Living styleguides
@@ -606,40 +532,128 @@ Help people!
 * code-generated examples
 * live updates
 * component-focused development<br/>
-  = "styleguide first"
+
+### Develop "styleguide first"
 
 ## SC5 Styleguide
+{: .sc5-styleguide }
+
+Informative and easily navigable live style guide which
+**renders every component separately**.
+
+![](pictures/npm-logo.svg){: .npm }
+![](pictures/github-octocat.svg){: .github }
+![](pictures/gulp-logo.svg){: .gulp }
+
+```
+npm install sc5-styleguide
+```
+{: .code }
+
+<style>
+.sc5-styleguide .github,
+.sc5-styleguide .npm,
+.sc5-styleguide .gulp {
+  float: left;
+  margin-right: 0.5em;
+}
+.sc5-styleguide .npm {
+  width: 120px;
+  margin-top: 1.5em;
+}
+.sc5-styleguide .github {
+  width: 120px;
+}
+.sc5-styleguide .gulp {
+  width: 50px;
+  margin-top: -0.25em;
+}
+.sc5-styleguide .code {
+  clear: both;
+}
+</style>
+
+## SC5 Styleguide
+{: .no-title .link }
+
+[styleguide.sc5.io](http://styleguide.sc5.io/)
+{: .link }
+
+### Example: [varya.me/styleguide](http://varya.me/styleguide/#/)
+
+<style>
+.slide.link div {
+  margin-top: 4em;
+}
+.slide.link .link {
+  font-size: 72px;
+}
+</style>
 
 ## Version migration?
 {: .shout }
 
 <!-- How about version migration again? -->
 
-## Workaround
+## What is the problem?
+{: #problem }
 
-### Problem?
 Something is broken.
 
 <div class="next" markdown="1">
-### Problem?
-<b>Something</b> is broken. I do not know <b>what</b> and <b>where</b>.
+<b>Something</b> is broken.<br/>
+I do not know <b>what</b> and <b>where</b>.
 </div>
 
+<style>
+#problem p {
+  font-size: 60px;
+}
+</style>
+
 ## Visual tests
+{: #visual-tests }
 
-More slides
+![](pictures/spot-difference.png){: .picture }
+{: .spot }
 
-## Client projects
+```
+npm install sc5-styleguide-visualtest
+```
 
-* Elisa
-* DNA
-* Veikkaus
-* Small projects
+<style>
+#visual-tests .picture {
+  width: 450px;
+}
+#visual-tests .spot {
+  text-align: center;
+}
+</style>
 
-## Open<br/>source
+## Spot the difference
+{: .spot }
+
+```
+> gulp test:visual
+```
+
+![](pictures/console-report.png)
+
+### Human's version: [example](example/visual-tests.html)
+
+<style>
+.slide.spot p {
+  margin-bottom: 0.25em;
+}
+.slide.spot pre {
+  margin-bottom: 1em;
+}
+</style>
+
+## No closed source
 {: .shout }
 
-## Open source
+## Open code, open process
 
 * Start in open source
 * Feature is more than code
@@ -662,7 +676,7 @@ More slides
 ## Thank you
 {: .thanks }
 
-Varya Stepanova<br/>
+### Varya Stepanova<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
 ### Slides: [varya.me/dotcss-2016](http://varya.me/dotcss-2016/)
