@@ -653,11 +653,18 @@ npm install sc5-styleguide-visualtest
 ## No closed source
 {: .shout }
 
-## Open code, open process
+## Open code - open process
+{: #open }
 
 * Start in open source
 * Feature is more than code
 * Enjoy the community
+
+<style>
+#open h2 {
+  font-size: 50px;
+}
+</style>
 
 ## Community
 {: .shout }
