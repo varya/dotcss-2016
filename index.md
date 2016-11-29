@@ -639,7 +639,7 @@ npm install sc5-styleguide-visualtest
 
 ![](pictures/console-report.png)
 
-### Human's version: [example](example/visual-tests.html)
+### Human's version: [example](examples/visual-tests/index.html)
 
 <style>
 .slide.spot p {
