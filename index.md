@@ -133,10 +133,21 @@ styleguides and visual regression tests are involved.
   background-image:url('pictures/fantacy-library.jpg');
   background-size: cover;
   background-position: 0 0, center;
+}
+
+#Cover div {
   position: relative;
 }
 
-#Cover::after {
+#Cover#Cover h2 {
+  text-shadow:
+    5px 5px 5px rgba(0,0,0,0.75),
+    -5px 5px 5px rgba(0,0,0,0.75),
+    -5px -5px 5px rgba(0,0,0,0.75),
+    -5px -5px 5px rgba(0,0,0,0.75);
+}
+
+#Cover h3::after {
   content: "";
   display: block;
   position: absolute;
@@ -144,13 +155,11 @@ styleguides and visual regression tests are involved.
   left: 0;
   visibility: visible;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.75;
   z-index: -1;
-}
-
-.list #Cover::after {
-  width: 256px;
-  height: 160px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 2px 3px rgba(0,0,0,0.75);
 }
 
 #Cover h2 {
@@ -193,7 +202,7 @@ styleguides and visual regression tests are involved.
 Senior Software Specialist at <b>SC5</b> (Helsinki)
 
 ### Before
-<b>TMG</b> (Amsterdam, the Netherlands); <b>Yandex</b>&nbsp;(Moscow,&nbsp;Russia)
+<b>TMG</b> (Amsterdam, the Netherlands)<br/><b>Yandex</b>&nbsp;(Moscow,&nbsp;Russia)
 
 ### Area of expertise
 Components for web: pattern libraries, SGDD, BEM, React.
@@ -266,21 +275,34 @@ Components for web: pattern libraries, SGDD, BEM, React.
 {: .shout }
 
 ## Version migration
+{: #migration }
 
-Twitter bootsrap
+### Twitter bootsrap N -> N+1
 
 * Rename classes
 * Change HTML
 * Fix JavaScript
 
-1 website, 20 basic components
+### 1 website<br/> 20 basic components
+{: .next .only  }
+
+<style>
+#migration h3 {
+  margin-bottom: 1em;
+}
+#migration .only {
+  float: right;
+  margin-top: -4.75em;
+  margin-right: 3em;
+}
+</style>
 
 ## Requirements
 
 * Update 200+ websites
 * 100+ common components, + custom components
 * Do it yesterday
-* <b>Keep the people calm</b>
+* <b>Try not to make enimies</b>{: .next }
 
 ## BEM tree
 {: #bem-tree }
@@ -524,7 +546,7 @@ Help people!
 }
 </style>
 
-## Think in modulas
+## Think in modules
 {: .shout }
 
 ## Living styleguides
