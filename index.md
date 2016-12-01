@@ -277,7 +277,7 @@ Components for web: pattern libraries, SGDD, BEM, React.
 ## Version migration
 {: #migration }
 
-### Twitter bootsrap N -> N+1
+### Library@N -> Library@N+1
 
 * Rename classes
 * Change HTML
@@ -705,7 +705,8 @@ npm install sc5-styleguide-visualtest
 ## Thank you
 {: .thanks }
 
-### Varya Stepanova<br/>
+### Varya Stepanova
+[mail@varya.me](mailto:mail@varya.me)<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }
 
 ### Slides: [varya.me/dotcss-2016](http://varya.me/dotcss-2016/)
