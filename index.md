@@ -192,9 +192,6 @@ styleguides and visual regression tests are involved.
 }
 </style>
 
-## Bonjour!
-{: .shout }
-
 ## Me
 {: .no-title }
 
