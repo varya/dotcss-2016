@@ -301,7 +301,7 @@ Components for web: pattern libraries, SGDD, BEM, React.
 * Do it yesterday
 * <b>Try not to make enimies</b>{: .next }
 
-## BEM tree
+## Tree of blocks
 {: #bem-tree }
 
 <table class="table"><tr>
@@ -376,11 +376,6 @@ Components for web: pattern libraries, SGDD, BEM, React.
   font-size: 0.5em;
 }
 </style>
-
-## Upgrade-button
-{: .cover .no-title }
-
-![](pictures/upgrade-button.jpg){: .cover }
 
 ## Pattern library
 {: #pattern-library }
@@ -475,7 +470,7 @@ Components for web: pattern libraries, SGDD, BEM, React.
 </style>
 
 
-## BEM(ish) style guide
+## Docs for components
 {: #bem-components }
 
 ![](pictures/bem-components.png){: .pic }
@@ -485,6 +480,11 @@ Components for web: pattern libraries, SGDD, BEM, React.
   width: 100%;
 }
 </style>
+
+## Upgrade-button
+{: .cover .no-title }
+
+![](pictures/upgrade-button.jpg){: .cover }
 
 ## To do the same
 {: #to-repeat }
