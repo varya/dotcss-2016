@@ -249,7 +249,7 @@ Components for web: pattern libraries, SGDD, BEM, React.
 ## The blocks
 {: #the-blocks }
 
-![](pictures/yandex-blocks.png){: .cover }
+![](pictures/yandex-blocks.jpg){: .cover }
 
 <style>
 #the-blocks h2 {
@@ -691,7 +691,7 @@ npm install sc5-styleguide-visualtest
 ## World
 {: .no-title #world }
 
-![](pictures/world.png){: .world }
+![](pictures/world.jpg){: .world }
 
 <style>
 #world .world {
